@@ -8,7 +8,7 @@ before_script:
     - 'cd $TRAVIS_BUILD_DIR'
 before_install:
 - |-
-    'case $TRAVIS_OS_NAME in
+    case $TRAVIS_OS_NAME in
         windows)
           [[ ! -f C:/tools/msys64/msys2_shell.cmd ]] && rm -rf C:/tools/msys64
           choco uninstall -y mingw
@@ -23,7 +23,7 @@ before_install:
           export PATH=/C/tools/msys64/mingw64/bin:$PATH
           export MAKE=mingw32-make
           ;;
-      esac'
+      esac
 before_cache:
 - |-
     case $TRAVIS_OS_NAME in
