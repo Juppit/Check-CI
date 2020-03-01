@@ -4,12 +4,11 @@ jobs:
         -
             os: windows
             script:
-            - ls "C:/tools/msys64"
             - ls "C:/tools/msys64/mingw64"
-            - ls "C:/tools/msys64/mingw64/bin"
+            - ls "C:/tools/msys64/mingw64/bin/*make*"
             - C:/tools/msys64/mingw64/bin/mingw32-make --version
-            - echo $make
-            - echo $MAKE
+            - C:/tools/msys64/mingw64/bin/make --version
+            - make --version
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
 before_install:
@@ -32,7 +31,7 @@ before_install:
           taskkill //IM gpg-agent.exe //F
           export PATH=/C/tools/msys64/mingw64/bin:$PATH
           export MAKE=mingw32-make
-          export make=mingw32-make
+          cp C:/tools/msys64/mingw64/bin/mingw32-make C:/tools/msys64/mingw64/bin/make
           ;;
       esac
 before_cache:
