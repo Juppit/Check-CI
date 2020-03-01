@@ -4,9 +4,6 @@ jobs:
         -
             os: windows
             script:
-            - ls "C:/tools/msys64/mingw64"
-            - ls "C:/tools/msys64/mingw64/bin/m*"
-            - C:/tools/msys64/mingw64/bin/mingw32-make --version
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
 before_script:
