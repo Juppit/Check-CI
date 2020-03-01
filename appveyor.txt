@@ -1,0 +1,23 @@
+image:
+- Visual Studio 2017
+
+environment:
+  matrix:
+  - MSYSTEM: Cygwin64
+    PATH: C:\msys64\usr\bin
+  - MSYSTEM: MINGW64
+    PATH: C:\msys64\usr\bin
+  CHERE_INVOKING: 1
+
+install:
+  - bash --login -c "wget -O config.guess 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD'"
+  - bash --login -c "wget -O config.sub 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD'"
+
+build_script:
+  - bash --login -c "echo **** uname -a:"
+  - bash --login -c "uname -a"
+  - bash --login -c "echo **** config.guess"
+  - bash --login -c "./config.guess || exit 0"
+
+test:
+  off
