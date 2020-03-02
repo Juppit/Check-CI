@@ -8,6 +8,7 @@ jobs:
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
+            - pacman -h
             ##- ls /bin /usr/bin
             ##- ls -a C:/tools/msys64/mingw64/bin
             ##- ls -a /
