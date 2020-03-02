@@ -4,8 +4,10 @@ jobs:
         -
             os: windows
             script:
+            - ls C:/tools/msys64/mingw64/bin
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
+            - echo $PATH
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
 before_install:
