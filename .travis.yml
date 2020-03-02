@@ -8,12 +8,12 @@ jobs:
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            - pacman -h
+            - ls -a $HOME/AppData/Local/Temp/chocolatey
             ##- ls /bin /usr/bin
             ##- ls -a C:/tools/msys64/mingw64/bin
             ##- ls -a /
             ##- ls -a /c/ProgramData/chocolatey/bin
-            - ls -a /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin
+            ##- ls -a /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin
             ##- /c/ProgramData/chocolatey/bin/bsdtar --version
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
