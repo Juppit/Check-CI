@@ -26,7 +26,7 @@ before_install:
                 automake \
                 mingw-w64-x86_64-libtool \
                 mingw-w64-x86_64-toolchain \
-                unzip
+                bsdtar wget unzip patch bison
           taskkill //IM gpg-agent.exe //F
           export PATH=/C/tools/msys64/mingw64/bin:$PATH
           export MAKE=mingw32-make
