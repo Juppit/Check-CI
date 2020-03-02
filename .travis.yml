@@ -8,8 +8,10 @@ jobs:
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            - ls /usr/bin
-            - where bison
+            ##- ls /bin /usr/bin
+            - pacman -Ql patch
+            - where bash
+            - where patch
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
 before_install:
