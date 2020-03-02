@@ -9,7 +9,7 @@ jobs:
             - make --version
             - echo $PATH
             ##- ls /bin /usr/bin
-            - pacman -Ql patch.exe
+            - pacman -Ql
             - bsdtar --version
             - where bsdtar.exe
             - where bash
