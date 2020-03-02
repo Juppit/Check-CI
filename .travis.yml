@@ -4,13 +4,13 @@ jobs:
         -
             os: windows
             script:
-            ##- ls C:/tools/msys64/mingw64/bin
+            - ls -a C:/tools/msys64/usr/bin
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            - $msys2 pacman -Q autoconf
-            - $msys2 pacman -Q bsdtar
-            - $msys2 where bsdtar
+            ##- $msys2 pacman -Q autoconf
+            ##- $msys2 pacman -Q bsdtar
+            ##- $msys2 where bsdtar
             ##- ls -a $HOME/AppData/Local/Temp/chocolatey/mingw/8.1.0
             ##- ls /bin /usr/bin
             ##- ls -a C:/tools/msys64/mingw64/bin
