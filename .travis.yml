@@ -9,11 +9,8 @@ jobs:
             - make --version
             - echo $PATH
             ##- ls /bin /usr/bin
-            - pacman -Ql
-            - bsdtar --version
-            - where bsdtar.exe
-            - where bash
-            - where patch
+            - ls /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin
+            - /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/bsdtar --version
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
 before_install:
