@@ -9,7 +9,9 @@ jobs:
             - make --version
             - echo $PATH
             ##- ls /bin /usr/bin
-            - pacman -Ql patch
+            - pacman -Ql
+            - bsdtar --version
+            - where bsdtar
             - where bash
             - where patch
 before_script:
