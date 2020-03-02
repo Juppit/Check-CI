@@ -5,18 +5,12 @@ jobs:
             os: windows
             script:
             - ls -a C:/tools/msys64/usr/bin
+            - ls -a $msys2
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            ##- $msys2 pacman -Q autoconf
             ##- $msys2 pacman -Q bsdtar
             ##- $msys2 where bsdtar
-            ##- ls -a $HOME/AppData/Local/Temp/chocolatey/mingw/8.1.0
-            ##- ls /bin /usr/bin
-            ##- ls -a C:/tools/msys64/mingw64/bin
-            ##- ls -a /
-            ##- ls -a /c/ProgramData/chocolatey/bin
-            ##- ls -a /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin
             ##- /c/ProgramData/chocolatey/bin/bsdtar --version
 before_script:
     - 'cd $TRAVIS_BUILD_DIR'
