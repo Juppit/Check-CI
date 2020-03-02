@@ -9,6 +9,7 @@ jobs:
             - make --version
             - echo $PATH
             ##- ls /bin /usr/bin
+            - ls -a C:/tools/msys64/mingw64/bin
             - ls -a /
             - ls -a /c/ProgramData/chocolatey/bin
             - ls /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin
