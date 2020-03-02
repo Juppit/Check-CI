@@ -8,7 +8,7 @@ jobs:
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            - ls -a $HOME/AppData/Local/Temp/chocolatey
+            - ls -a $HOME/AppData/Local/Temp/chocolatey/mingw
             ##- ls /bin /usr/bin
             ##- ls -a C:/tools/msys64/mingw64/bin
             ##- ls -a /
