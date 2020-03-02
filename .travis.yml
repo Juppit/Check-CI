@@ -8,8 +8,8 @@ jobs:
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - echo $PATH
-            - pacman -Q autoconf
-            - pacman -Q bsdtar
+            - $msys2 pacman -Q autoconf
+            - $msys2 pacman -Q bsdtar
             ##- ls -a $HOME/AppData/Local/Temp/chocolatey/mingw/8.1.0
             ##- ls /bin /usr/bin
             ##- ls -a C:/tools/msys64/mingw64/bin
