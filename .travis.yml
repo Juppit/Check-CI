@@ -4,11 +4,12 @@ jobs:
         -
             os: windows
             script:
-            - ls -al C:/tools/msys64/usr/bin
+            #- ls -al C:/tools/msys64/usr/bin
             - C:/tools/msys64/mingw64/bin/make --version
             - make --version
             - C:/tools/msys64/usr/bin/bsdtar --version
             - cp C:/tools/msys64/usr/bin/bsdtar.exe C:/tools/msys64/mingw64/bin/
+            - C:/tools/msys64/mingw64/bin/bsdtar --version
             - bsdtar --version
             - ls -al C:/tools/msys64/mingw64/bin
             - echo $PATH
